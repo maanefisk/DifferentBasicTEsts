@@ -6,7 +6,30 @@ namespace DifferentBasicTEsts
     {
         static void Main(string[] args)
         {
-            //Test4 Some numbers
+            //Test6 Multiplication of users 3 entered numbers
+            Console.WriteLine("Enter first number: ");
+            int answer1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter second number: ");
+            int answer2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter third number: ");
+            int answer3 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Entered numbers multiplied: " + answer1 + " * " + answer2 + " * " + answer3 + " = " + (answer1*answer2*answer3) + "\n");
+
+            //Test5 Swap two numbers (plus parse takes string value and makes it an int)
+            int firstNumber, secondNumber, storingNumber;
+            Console.WriteLine("Your first number: ");
+            firstNumber = int.Parse(Console.ReadLine());
+            Console.WriteLine("Your second number: ");
+            secondNumber = int.Parse(Console.ReadLine());
+            storingNumber = firstNumber;
+            firstNumber = secondNumber;
+            secondNumber = storingNumber;
+            Console.WriteLine("After swapping:");
+            Console.WriteLine("First number: "+firstNumber);
+            Console.WriteLine("Second number: " + secondNumber + "\n");
+
+            //Test4 Some random numbers
             Console.WriteLine("Enter your special number: ");
             int numbr4 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Your lottery ticket: ");
